@@ -1,0 +1,21 @@
+.heading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.CalScreen{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    width: 100%;
+}
+.btns{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin: 3px;
+}
+.btn-row{
+    padding-left: 10px;
+}

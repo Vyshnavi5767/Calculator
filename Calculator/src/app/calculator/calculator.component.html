@@ -1,0 +1,49 @@
+<div class="panel panel-primary">
+  <div class="panel-heading heading">Calculator</div>
+  <div class="panel-body" style="text-align:right">
+    <div class="row">
+     <div class="col-md-12">
+          <input class="CalScreen" type="text" [(ngModel)]="Calculator" placeholder="0"/>
+        </div>
+     </div>
+     <br/>
+     <div class="row btn-row">
+       <div class="col-md-12">
+         <input class="btn btn-default col-md-3 btns"(click)="Clear()" value="C" readonly/>
+         <input class="btn btn-default col-md-2 btns"(click)="Compute('Division')" value="/" readonly/>
+         <input class="btn btn-default col-md-2 btns"(click)="Compute('Multiplication')" value="x" readonly />
+         <input class="btn btn-default col-md-3 btns" value="-" (click)="Compute('Subtraction')" readonly/>
+        </div>
+     </div>
+     <div class="row btn-row">
+        <div class="col-md-12">
+          <input id="1" class="btn btn-default col-md-3 btns" value="1"  (click)="onChangeValue(1)" readonly />
+          <input id="2" class="btn btn-default col-md-2 btns" value="2" (click)="onChangeValue(2)"readonly/>
+          <input id="3" class="btn btn-default col-md-2 btns" value="3" (click)="onChangeValue(3)" readonly/>
+          <input class="btn btn-default col-md-3 btns" value="+" (click)="Compute('Addition')" readonly/>
+          </div>
+      </div>
+      <div class="row btn-row">
+          <div class="col-md-12">
+            <input id="4" class="btn btn-default col-md-3 btns" value="4" (click)="onChangeValue(4)" readonly/>
+            <input id="5" class="btn btn-default col-md-2 btns" value="5" (click)="onChangeValue(5)" readonly/>
+            <input id="6" class="btn btn-default col-md-2 btns" value="6" (click)="onChangeValue(6)"readonly/>
+            <input class="btn btn-default col-md-3  btns" value="." readonly/>
+           </div>
+        </div>
+        <div class="row btn-row">
+            <div class="col-md-12">
+              <input id="7" class="btn btn-default col-md-3 btns" value="7" (click)="onChangeValue(7)" readonly/>
+              <input id="8" class="btn btn-default col-md-2 btns" value="8" (click)="onChangeValue(8)"readonly/>
+              <input id="9" class="btn btn-default col-md-2 btns" value="9" (click)="onChangeValue(9)" readonly/>
+              <input class="btn btn-default col-md-3 btns" value="0" (click)="onChangeValue(0)" readonly/>
+              </div>
+        </div>
+        <div class="row btn-row">
+            <div class="col-md-12">
+             
+              <input class="btn btn-default col-md-10 btns" value="=" (click)="OnCompute()" readonly/>
+           </div>
+        </div>
+  </div>
+</div>

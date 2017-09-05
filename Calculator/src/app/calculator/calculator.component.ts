@@ -24,8 +24,7 @@ export class CalculatorComponent implements OnInit {
     switch(this.computeMethod){
       case 'Division': 
                  this.Calculator = this.previousValue / this.CurrentValue;
-                 console.log(this.Calculator);
-                break;
+                 break;
       case  'Addition':
               this.Calculator = this.previousValue + this.CurrentValue;
               break;
@@ -47,8 +46,6 @@ export class CalculatorComponent implements OnInit {
   onChangeValue(param:number){
     this.Calculator= this.previousValue = this.Calculator ||this.CurrentValue;
    this.Calculator =  this.CurrentValue = param;
-    console.log('The previous value is'+':'+' '+this.previousValue);
-    console.log('The Current Value is '+':'+' '+ this.CurrentValue);
   }
 
   Compute(Operation:string){
